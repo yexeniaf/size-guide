@@ -134,3 +134,14 @@ td {
   background-color: #ffffff;
 }
 
+.active {
+  display: table-cell!important;
+}
+
+.active-row {
+  display: table-row!important;
+}
+
+.hidden {
+  display: none;
+}
