@@ -10,9 +10,12 @@ body {
 }
 
 td {
-  border: 1px solid #000000;
   padding: .6rem;
   text-align: center;
+}
+
+.xs {
+
 }
 
 /* Toggle button */
