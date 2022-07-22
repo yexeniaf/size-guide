@@ -5,8 +5,10 @@ body {
 .chart-title {
   color: black;
   background-color: #e7dac4;
-  padding: .75rem;
+  padding: 1rem;
   font-weight: 700;
+  border-left: 3px solid white;
+  border-bottom: 3px solid black;
 }
 
 td {
@@ -14,8 +16,8 @@ td {
   text-align: center;
 }
 
-.xs {
-
+.inches-row, .centimeters-row {
+  border: 2px solid black
 }
 
 /* Toggle button */
@@ -142,7 +144,7 @@ td {
 }
 
 .active-row {
-  display: table-row!important;
+  display: table-row!important;  
 }
 
 .hidden {
