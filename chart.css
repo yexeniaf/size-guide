@@ -20,6 +20,10 @@ td {
   border: 2px solid black
 }
 
+tr #last-row {
+  border-bottom: none;
+}
+
 /* Toggle button */
 
 
