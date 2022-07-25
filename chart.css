@@ -17,12 +17,10 @@ td {
 }
 
 .inches-row, .centimeters-row {
-  border: 2px solid black
-}
-
-tr #last-row {
+  border: 2px solid black;
   border-bottom: none;
 }
+
 
 /* Toggle button */
 
@@ -148,7 +146,7 @@ tr #last-row {
 }
 
 .active-row {
-  display: table-row!important;  
+  display: table-row!important; 
 }
 
 .hidden {
