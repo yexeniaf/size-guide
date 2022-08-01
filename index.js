@@ -1,3 +1,4 @@
+// Toggle functionality for IN and CM button
 let btn = document.getElementById("marked");
 let newClass = '';
 
@@ -35,3 +36,29 @@ for (var i = 0; i < oldRow.length; i++) {
 }
 
 });
+
+// Function for Image Guide Toggle Button //
+
+function imageExtraSmall() {
+  document.getElementById("model-image").src = "https://cdn.shopify.com/s/files/1/0382/1223/9492/files/MeasuringGuide-04.jpg?v=1658957156";
+  document.getElementById("xs-info").style.display = "block";
+  document.getElementById("s-info").style.display = "none";
+  document.getElementById("xl-info").style.display = "none";
+}
+
+function imageSmall() {
+  document.getElementById("model-image").src = "https://cdn.shopify.com/s/files/1/0382/1223/9492/files/MeasuringGuide-05.jpg?v=1658957036";
+  document.getElementById("xs-info").style.display = "none";
+  document.getElementById("s-info").style.display = "block";
+  document.getElementById("xl-info").style.display = "none";
+
+}
+
+function imageExtraLarge() {
+  document.getElementById("model-image").src = "https://cdn.shopify.com/s/files/1/0382/1223/9492/files/MeasuringGuide-06.jpg?v=1658956407";
+  document.getElementById("xs-info").style.display = "none";
+  document.getElementById("s-info").style.display = "none";
+  document.getElementById("xl-info").style.display = "block";
+
+ 
+}
