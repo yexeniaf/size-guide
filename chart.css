@@ -3,6 +3,10 @@ body {
 }
 
 /* Chart Styling */
+table {
+  width: 99%;
+}
+
 .chart-title {
   color: black;
   background-color: #e7dac4;
@@ -16,33 +20,32 @@ td {
   padding: .6rem;
   text-align: center;
   background-color: #fff;
+  border-top: 2px solid black;
+}
+
+td.inches.first-col {
+  font-size: 1.7rem;
 }
 
 td.inches.first-col.active {
   font-size: 1.7rem;
 }
 
-.inches-row, .centimeters-row {
-  border: 2px solid black;
+td.size\,.first-col.centimeters.active {
+  font-size: 1.7rem;
 }
 
-.centimeters-hidden {
-  border: none;
-}
 .active {
   display: table-cell!important;
 }
 
 .active-row {
   display: table-row!important; 
-  border-bottom: none;
 }
 
 .hidden {
   display: none;
 }
-
-
 
 
 /* CM/IN Toggle button */
@@ -194,10 +197,9 @@ img {
   font-size: .8rem;
 }
 
-table {
-  width: -webkit-fill-available;
+hr {
+  margin-right: 3rem;
 }
-
 
 
 /* Alignment: size toggle button  With "View on" Text */
@@ -293,7 +295,7 @@ input:checked + label:hover {
 .popup h2 {
   margin-top: 0;
   color: #333;
-  font-size: .7rem;
+  font-size: 1rem;
   
 }
 .popup .close {
@@ -311,7 +313,6 @@ input:checked + label:hover {
 .popup .content {
   overflow: scroll;
   height: 100%;
-  padding-right: 1rem;
 }
 /* Mobile screens */
 @media only screen and (min-device-width: 320px) and (max-device-height: 896px) {
@@ -328,10 +329,11 @@ input:checked + label:hover {
     
   }
 
-.measuring-guide {
-  margin-left: 0rem;
-  margin-top: .9rem;
-}
+  .measuring-guide {
+    margin-left: 0rem;
+    margin-top: 1rem;
+  }
+
 
 .content {
   font-size: .8rem;
@@ -339,22 +341,12 @@ input:checked + label:hover {
 }
 
 
-.chart-title {
-  color: black;
-  background-color: #e7dac4;
-  padding: 0.2rem;
-  font-weight: 700;
-  border-left: 1px solid white;
-  border-bottom: 1px solid black;
-}
-td {
-  padding: 0.1rem;
-  text-align: center;
-}
+/* Check with David about this */
+
 
 th.chart-title {
-  padding: 0.5rem;
-  font-size: .75rem;
+  padding: 1.1rem;
+  font-size: .9rem;
 }
 
 .first-col {
@@ -368,10 +360,6 @@ th.chart-title {
 .chart-scroll {
   overflow-x: auto;
   padding-bottom: 1rem;
-}
-
-table {
-  width: -webkit-fill-available;
 }
 
 
@@ -502,6 +490,9 @@ span#IN {
   font-size: .8rem!important;
 }
 
-
+/* Pop-up */
+.popup .close {
+  top: -8px;
+}
 
 }
