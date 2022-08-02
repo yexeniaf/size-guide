@@ -17,7 +17,7 @@ table {
 }
 
 td {
-  padding: .6rem;
+  padding: .5rem;
   text-align: center;
   background-color: #fff;
   border-top: 2px solid black;
@@ -153,7 +153,6 @@ td.size\,.first-col.centimeters.active {
   background-color: #e7dac4;
   padding-right: 11px;
   content: "";
-  
 }
 
 #button-10 .checkbox:checked + .knobs:after {
@@ -166,7 +165,6 @@ td.size\,.first-col.centimeters.active {
 
 
 /* Measuring Guide With Image */
-
 .measuring-guide {
   display: flex;
   justify-content: flex-start;
@@ -203,23 +201,23 @@ hr {
 
 
 /* Alignment: size toggle button  With "View on" Text */
-
 .size-options {
   display: flex;
   align-items: center;
 }
 
+
 /* Toggle Button of Model Image and Info */
 .switch-toggle {
   float: left;
   background: white;
- 
 }
+
 .switch-toggle input {
  position: absolute;
  opacity: 0;
- 
 }
+
 .switch-toggle input + label {
  padding: 7px;
  float:left;
@@ -227,10 +225,11 @@ hr {
  cursor: pointer;
  margin-left: 1rem;
 }
+
 .switch-toggle input:checked + label {
  background: #e7dac4;
  font-weight: 700;
-
+ border-radius: 16px;
 }
 
 label:hover {
@@ -239,7 +238,6 @@ label:hover {
 
 input:checked + label:hover {
   border-bottom: none;
-
 }
 
 /* Pop-up function */
@@ -277,6 +275,7 @@ input:checked + label:hover {
   visibility: hidden;
   opacity: 0;
 }
+
 .overlay:target {
   visibility: visible;
   opacity: 1;
@@ -296,8 +295,8 @@ input:checked + label:hover {
   margin-top: 0;
   color: #333;
   font-size: 1rem;
-  
 }
+
 .popup .close {
   position: absolute;
   top: 0px;
@@ -307,13 +306,17 @@ input:checked + label:hover {
   text-decoration: none;
   color: #333;
 }
+
 .popup .close:hover {
   color: #e7dac4;
 }
+
 .popup .content {
   overflow: scroll;
   height: 100%;
 }
+
+
 /* Mobile screens */
 @media only screen and (min-device-width: 320px) and (max-device-height: 896px) {
 
@@ -326,7 +329,10 @@ input:checked + label:hover {
     padding: 13px;
     width: 90%;
     height: 84%;
-    
+  }
+
+  .popup h2 {
+    font-size: .8rem;
   }
 
   .measuring-guide {
@@ -334,165 +340,153 @@ input:checked + label:hover {
     margin-top: 1rem;
   }
 
-
-.content {
-  font-size: .8rem;
-  padding-right: .7rem;
-}
-
-
-/* Check with David about this */
-
-
-th.chart-title {
-  padding: 1.1rem;
-  font-size: .9rem;
-}
-
-.first-col {
-  position: -webkit-sticky; /* for Safari */
-  position: sticky;
-  
-  left: 0;
-  z-index: 999;
-}
-
-.chart-scroll {
-  overflow-x: auto;
-  padding-bottom: 1rem;
-}
-
-
-img {
-  height: 14rem;
-  margin-right: 1.5rem;
-}
-
-hr {
-  margin-right: 1.4rem;
-}
-
-.switch-toggle input + label {
-  padding: 5px;
-  margin: 0 0.3rem 0 0.1rem;
-}
-
-
-.measuring-guide-title {
-  font-size: .9rem;
-}
-
-.info {
-  font-size: .6rem;
-}
-
-.tape-info {
-  margin-top: 0.8rem;
-  font-size: .5rem;
-}
-
-.info-break {
-  display: none;
-}
-
-p {
-  font-size: .6rem;
-}
-
-label {
-  font-size: .55rem;
-  border-bottom: 1px solid #e7dac4;
-}
-
-
-/* IN/CM Toggle Button */
-
-.toggle-button-cover {
-  display: table-cell;
-  position: relative;
-  height: 1.5rem;
-  box-sizing: border-box;
-}
-
-.button-cover:before {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  color: #d7e3e3;
-}
-
-.button-cover,
-.knobs,
-.layer {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-
-.knobs{
-  border:1px solid #000000;
+  .content {
+    font-size: .8rem;
+    padding-right: .7rem;
   }
 
-.button {
-  position: relative;
-  top: 50%;
-  width: 74px;
-  height: 25px;
-  margin: -30px auto 0 auto;
-  overflow: hidden;
-}
+  .first-col {
+    /* for Safari */
+    position: -webkit-sticky; 
+    position: sticky;
+    left: 0;
+    z-index: 999;
+  }
+
+  .chart-scroll {
+    overflow-x: auto;
+    padding-bottom: 1rem;
+  }
+
+  img {
+    height: 14rem;
+    margin-right: 1.5rem;
+  }
+
+  hr {
+    margin-right: 1.4rem;
+  }
+
+  .switch-toggle input + label {
+    padding: 5px;
+    margin: 0 0.3rem 0 0.1rem;
+  }
+
+  .measuring-guide-title {
+    font-size: .9rem;
+  }
+
+  .info {
+    font-size: .7rem;
+  }
+
+  .tape-info {
+    margin-top: 0.8rem;
+    font-size: .5rem;
+  }
+
+  .info-break {
+    display: none;
+  }
+
+  p {
+    font-size: .6rem;
+  }
+
+  label {
+    font-size: .55rem;
+    border-bottom: 1px solid #e7dac4;
+  }
 
 
+  /* IN/CM Toggle Button */
 
-#button-10 .knobs:before,
-#button-10 .knobs:after,
-#button-10 .knobs span {
-  position: absolute;
-  top: 1px;
-  width: 10px;
-  height: 5px;
-  font-size: 1rem;
-  text-align: center;
-  line-height: 1;
-  padding: 5px 12px;
-}
+  .toggle-button-cover {
+    display: table-cell;
+    position: relative;
+    height: 1.5rem;
+    box-sizing: border-box;
+  }
 
-#button-10 .knobs:before {
-  content: "";
-  height: 11px;
-  background-color: #e7dac4;
-}
+  .button-cover:before {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #d7e3e3;
+  }
 
-#button-10 .knobs:after {
-  content: "CM";
-  right: 7px;
-  color: rgb(0, 0, 0);
-  
-}
+  .button-cover,
+  .knobs,
+  .layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
 
+  .knobs{
+    border:1px solid #000000;
+    }
 
-#button-10 .checkbox:checked + .knobs:before {
-  left: 35px;
-  background-color: #e7dac4;
-  padding-right: 15px;
-  content: "";
-  font-size: 1rem;
-  
-}
+  .button {
+    position: relative;
+    top: 50%;
+    width: 74px;
+    height: 25px;
+    margin: -30px auto 0 auto;
+    overflow: hidden;
+  }
 
-span#IN {
-  font-size: .8rem!important;
-}
+  #button-10 .knobs:before,
+  #button-10 .knobs:after,
+  #button-10 .knobs span {
+    position: absolute;
+    top: 1px;
+    width: 10px;
+    height: 5px;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1;
+    padding: 5px 12px;
+  }
 
-:after {
-  font-size: .8rem!important;
-}
+  #button-10 .knobs:before {
+    content: "";
+    height: 11px;
+    background-color: #e7dac4;
+  }
 
-/* Pop-up */
-.popup .close {
-  top: -8px;
-}
+  #button-10 .knobs:after {
+    content: "CM";
+    right: 7px;
+    color: rgb(0, 0, 0);
+  }
+
+  #button-10 .checkbox:checked + .knobs:before {
+    left: 35px;
+    background-color: #e7dac4;
+    padding-right: 15px;
+    content: "";
+    font-size: 1rem;  
+  }
+
+  span#IN {
+    font-size: .8rem!important; 
+  }
+
+  :after {
+    font-size: .8rem!important;
+  }
+
+  /* Pop-up */
+  .popup .close {
+    top: -8px;
+  }
+
+  /* Image and model size info toggle button */
+  .switch-toggle input:checked + label {
+    border-radius: 11px;
+   }
 
 }
