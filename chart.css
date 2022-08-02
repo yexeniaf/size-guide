@@ -31,7 +31,7 @@ td.inches.first-col.active {
   font-size: 1.7rem;
 }
 
-td.size\,.first-col.centimeters.active {
+td.size\,.centimeters.active {
   font-size: 1.7rem;
 }
 
@@ -351,6 +351,18 @@ input:checked + label:hover {
     position: sticky;
     left: 0;
     z-index: 999;
+  }
+
+  td.inches.first-col {
+    font-size: 1.6rem;
+  }
+  
+  td.inches.first-col.active {
+    font-size: 1.6rem;
+  }
+  
+  td.size\,.centimeters.active {
+    font-size: 1.6rem;
   }
 
   .chart-scroll {
