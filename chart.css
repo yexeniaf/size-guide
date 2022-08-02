@@ -18,6 +18,10 @@ td {
   background-color: #fff;
 }
 
+td.inches.first-col.active {
+  font-size: 1.7rem;
+}
+
 .inches-row, .centimeters-row {
   border: 2px solid black;
 }
