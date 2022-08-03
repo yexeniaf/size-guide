@@ -17,7 +17,7 @@ table {
 }
 
 td {
-  padding: .5rem;
+  padding: .35rem;
   text-align: center;
   background-color: #fff;
   border-top: 2px solid black;
@@ -26,6 +26,8 @@ td {
 td.inches.first-col {
   font-size: 1.7rem;
 }
+
+
 
 td.inches.first-col.active {
   font-size: 1.7rem;
@@ -345,13 +347,6 @@ input:checked + label:hover {
     padding-right: .7rem;
   }
 
-  .first-col {
-    /* for Safari */
-    position: -webkit-sticky; 
-    position: sticky;
-    left: 0;
-    z-index: 999;
-  }
 
   td.inches.first-col {
     font-size: 1.6rem;
@@ -369,6 +364,7 @@ input:checked + label:hover {
     overflow-x: auto;
     padding-bottom: 1rem;
   }
+  
 
   img {
     height: 14rem;
@@ -500,5 +496,6 @@ input:checked + label:hover {
   .switch-toggle input:checked + label {
     border-radius: 11px;
    }
+
 
 }
